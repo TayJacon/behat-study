@@ -1,0 +1,14 @@
+default:
+  # autoload:
+  #   '': '%paths.base%/../features/bootstrap'
+  suites:
+    default:
+      contexts: 
+        - FeatureContext
+        - Behat\MinkExtension\Context\MinkContext
+  extensions:
+    Behat\MinkExtension:
+        base_url: https://www.appnovation.com/
+        selenium2:
+          browser: chrome
+          wd_host: https://www.appnovation.com/
